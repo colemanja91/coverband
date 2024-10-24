@@ -56,7 +56,7 @@ module Coverband
       end
 
       def raw_store
-        raise NotImplementedError, "MemcachedStore doesn't support raw_store"
+        @memcached
       end
 
       attr_reader :memcached
